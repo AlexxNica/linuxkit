@@ -257,7 +257,7 @@ func packetMachineToArch(machine string) string {
 
 // Build the iPXE script for packet machines
 func packetIPXEScript(name, baseURL, cmdline, arch string) string {
-	// Note, we *append* the <prefix>-cmdline. iXPE booting will
+	// Note, we *append* the <prefix>-cmdline. iPXE booting will
 	// need the first set of "kernel-params" and we don't want to
 	// require these to be added to every YAML file.
 	script := "#!ipxe\n\n"
